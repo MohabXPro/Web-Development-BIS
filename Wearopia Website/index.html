@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./Photos/WearpiaT.png" type="image/png" />
+    <title>Wearopia</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container">
+        <a class="navbar-brand text-white fw-bolder" href="#">Wearopia</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item px-4">
+              <a class="nav-link active" aria-current="page" href="#home"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item px-4">
+              <a class="nav-link" href="#products">Products</a>
+            </li>
+            <li class="nav-item px-4">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item px-4">
+              <a class="nav-link" href="./cart.html">Cart</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div id="home" class="hero text-center py-3 my-5">
+      <h1 class="fw-bold py-2">Welcome to Wearopia</h1>
+      <h2 class="h4 fs-4">Where Fashion Rules</h2>
+    </div>
+    <div class="bord"></div>
+    <div id="products" class="container py-4">
+      <div class="row">
+        <div class="col-md-7">
+          <div>
+            <img
+              src="./Photos/Wearopia Stand.jpg"
+              class="w-100 rounded-4"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="col-md-5">
+          <div>
+            <h3>Basic Hoodie</h3>
+            <p class="lead">
+              <span class="fw-bolder">Description:</span> Premium Cotton,
+              Premium Comfort: Experience the ultimate in comfort with our 100%
+              premium cotton hoodie. Soft, durable, and built to last.
+            </p>
+            <p class="fs-3 pt-2">
+              <span class="fw-bolder">Price:</span> 500 L.E
+            </p>
+            <button class="testbutton" onclick="addToCart(1)">
+              Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="row py-5 my-5">
+        <div class="col-md-7">
+          <div>
+            <img
+              src="./Photos/Wearopia Hot.jpg"
+              class="w-100 rounded-4"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="col-md-5">
+          <div>
+            <h3>Printed Hoodie</h3>
+            <p class="lead">
+              <span class="fw-bolder">Description:</span> Cozy up in style with
+              our soft, 100% cotton hoodie. Featuring a bold, eye-catching
+              print, it's the perfect blend of comfort and fashion.
+            </p>
+            <p class="fs-3 pt-2">
+              <span class="fw-bolder">Price:</span> 700 L.E
+            </p>
+            <button class="testbutton" onclick="addToCart(1)">
+              Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="bord"></div>
+    </div>
+
+<section id="about" class="about container">
+      <h2>About Us</h2>
+      <p class="fs-4 lead">
+        Wearopia is dedicated to bringing you the latest in hoodie fashion. Our
+        mission is to provide high-quality, stylish hoodies that make you feel
+        confident and comfortable. Whether you're looking for something casual
+        or a statement piece, we've got you covered.
+      </p>
+      <ul class="links list-unstyled d-flex justify-content-around py-4">
+        <li>
+          <a
+            target="_blank"
+            href="https://www.facebook.com/share/WoVo7cKvtFMXp42Q/"
+            ><i class="fa-brands fa-facebook fs-2"></i>
+          </a>
+        </li>
+        <li>
+          <a
+            target="_blank"
+            href="https://www.instagram.com/wearopia_store?igsh=a3d0MGMyY3RyaGlo"
+            ><i class="fa-brands fa-instagram fs-2 text-danger"></i
+          ></a>
+        </li>
+        <li>
+          <a
+            target="_blank"
+            href="https://www.tiktok.com/@wearopia_store?_t=ZS-8rt4wfJo882&_r=1"
+            ><i class="fa-brands fa-tiktok fs-2 text-dark"></i
+          ></a>
+        </li>
+      </ul>
+      <div class="bord"></div>
+    </section>
+    <footer>
+      <p>&copy; 2024 Wearopia</p>
+    </footer>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
